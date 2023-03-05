@@ -1,0 +1,13 @@
+.table-view .column-header,
+.table-view .column-header .filler {
+    visibility: hidden;
+    -fx-padding: -1.0em;
+}
+.table-view .column-header-background{
+    visibility: hidden;
+    -fx-padding: -1.0em;
+}
+
+
+
+

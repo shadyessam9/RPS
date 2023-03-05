@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="acc" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #1A1818; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.accounting">
+   <children>
+       <Pane prefHeight="47.0" prefWidth="1007.0" style="-fx-background-color: #53277E; -fx-background-radius: 10 10 0 0;">
+           <children>
+               <Label layoutX="55.0" layoutY="7.0" text="ACCOUNTING" textFill="WHITE">
+                   <font>
+                       <Font name="System Bold" size="23.0" />
+                   </font>
+               </Label>
+               <Button contentDisplay="CENTER" layoutX="7.0" layoutY="6.0" onAction="#home" prefHeight="34.0" prefWidth="28.0" style="-fx-background-color: transparent; -fx-background-radius: 5;">
+                   <graphic>
+                       <ImageView fitHeight="24.0" fitWidth="26.0">
+                           <image>
+                               <Image url="@../assetes/home.png" />
+                           </image>
+                       </ImageView>
+                   </graphic>
+               </Button>
+            <Button fx:id="j" layoutX="256.0" layoutY="11.0" mnemonicParsing="false" onAction="#journal" style="-fx-background-color: transparent;" text="JOURNAL" textFill="WHITE" />
+            <Button fx:id="gl" layoutX="424.0" layoutY="11.0" mnemonicParsing="false" onAction="#generalledger" style="-fx-background-color: transparent;" text="GENERAL LEDGER" textFill="WHITE" />
+            <Button layoutX="609.0" layoutY="11.0" mnemonicParsing="false" onAction="#customers" style="-fx-background-color: transparent;" text="CUSTOMERS" textFill="WHITE" />
+            <Button fx:id="s" layoutX="536.0" layoutY="11.0" mnemonicParsing="false" onAction="#suppliers" style="-fx-background-color: transparent;" text="SUPPLIERS" textFill="WHITE" />
+            <Button fx:id="gl1" layoutX="323.0" layoutY="11.0" mnemonicParsing="false" onAction="#trailbalance" style="-fx-background-color: transparent;" text="TRAIL BALANCE" textFill="WHITE" />
+           </children>
+       </Pane>
+      <Pane fx:id="host" layoutY="47.0" prefHeight="554.0" prefWidth="1007.0" style="-fx-background-radius: 10; -fx-background-color: #1A1818;" />
+   </children>
+</AnchorPane>

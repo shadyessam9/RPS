@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="553" prefWidth="1007" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.suppliers">
+    <children>
+        <Line endX="-132.0" endY="420.29290771484375" layoutX="412.0" layoutY="143.0" startX="-132.0" startY="-143.0" stroke="#53277e" />
+        <TableView fx:id="suplist" layoutX="10.0" layoutY="39.0" prefHeight="501.0" prefWidth="259.0" style="-fx-background-color: transparent;" stylesheets="@tablestyle2.css">
+            <columns>
+                <TableColumn fx:id="sn" editable="false" prefWidth="158.0" sortable="false" />
+                <TableColumn fx:id="va" editable="false" prefWidth="99.0" sortable="false" />
+            </columns>
+        </TableView>
+        <ImageView fx:id="ci" fitHeight="160.0" fitWidth="180.0" layoutX="307.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assetes/account.png" />
+            </image></ImageView>
+        <Label layoutX="520.0" layoutY="27.0" text="NAME : " textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="520.0" layoutY="69.0" text="GOVERNATE : " textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="520.0" layoutY="111.0" text="ADRESS : " textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="520.0" layoutY="155.0" text="TELEPHONE : " textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="n" layoutX="578.0" layoutY="27.0" prefHeight="21.0" prefWidth="413.0" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="cg" layoutX="622.0" layoutY="69.0" prefHeight="21.0" prefWidth="375.0" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="ca" layoutX="589.0" layoutY="111.0" prefHeight="21.0" prefWidth="404.0" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="ct" layoutX="617.0" layoutY="155.0" prefHeight="21.0" prefWidth="375.0" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TableView fx:id="dashboard" layoutX="293.0" layoutY="234.0" prefHeight="323.0" prefWidth="702.0" style="-fx-background-color: #1A1818;" stylesheets="@tablestyle.css">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="dt" prefWidth="75.0" text="DATE" />
+                <TableColumn fx:id="net" prefWidth="75.0" text="NET" />
+                <TableColumn fx:id="bb" prefWidth="75.0" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+        <Label layoutX="291.0" layoutY="197.0" text="BILLS" textFill="#53277e">
+            <font>
+                <Font name="System Bold" size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="10.0" layoutY="11.0" text="SUPPLIERS" textFill="#53277e">
+            <font>
+                <Font name="System Bold" size="23.0" />
+            </font>
+        </Label>
+      <Button layoutX="834.0" layoutY="198.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="157.0" style="-fx-background-color: #4A4949; -fx-border-color: transparent;" text="ACCMULATED TAX" textFill="WHITE" />
+    </children>
+</AnchorPane>

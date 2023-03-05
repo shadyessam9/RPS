@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="553.0" prefWidth="1007.0" style="-fx-background-color: #1A1818; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.trailbalance">
+    <children>
+        <ComboBox fx:id="type" layoutX="552.0" layoutY="9.0" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: #707070;" stylesheets="@comboboxstyle.css" />
+        <Label layoutX="683.0" layoutY="14.0" text="DATE" textFill="#53277e">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="21.0" layoutY="27.0" text="TRAIL BALANCE" textFill="#53277e">
+            <font>
+                <Font name="System Bold" size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="513.0" layoutY="13.0" text="TYPE" textFill="#53277e">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <TableView fx:id="dashboard" centerShape="true" editable="true" fixedCellSize="0.0" focusTraversable="false" layoutX="2.0" layoutY="85.0" prefHeight="462.0" prefWidth="1002.0" scaleShape="false" style="-fx-background-color: transparent;" stylesheets="@tablestyle.css">
+            <columns>
+                <TableColumn fx:id="an" prefWidth="160.0" sortable="false" text="ACCOUNT" />
+                <TableColumn fx:id="pa" prefWidth="358.0" sortable="false" text="OPENNING BALANCE">
+               <columns>
+                      <TableColumn fx:id="odb" prefWidth="140.0" sortable="false" />
+                      <TableColumn fx:id="ocr" prefWidth="140.0" sortable="false" />
+               </columns></TableColumn>
+            <TableColumn fx:id="m1" prefWidth="156.0" sortable="false">
+               <columns>
+                  <TableColumn fx:id="mdb" prefWidth="140.0" sortable="false" />
+                  <TableColumn fx:id="mcr" prefWidth="140.0" sortable="false" />
+               </columns>
+            </TableColumn>
+            <TableColumn fx:id="total" prefWidth="300.0" sortable="false" text="TOTAL">
+               <columns>
+                  <TableColumn fx:id="tdb" prefWidth="140.0" sortable="false" />
+                  <TableColumn fx:id="tcr" prefWidth="140.0" sortable="false" />
+               </columns>
+            </TableColumn>
+            </columns>
+            <effect>
+                <Blend />
+            </effect>
+        </TableView>
+      <DatePicker fx:id="dt1" layoutX="731.0" layoutY="10.0" prefHeight="25.0" prefWidth="128.0" />
+      <DatePicker fx:id="dt2" layoutX="869.0" layoutY="10.0" prefHeight="0.0" prefWidth="128.0" />
+      <ComboBox fx:id="comparison" layoutX="607.0" layoutY="49.0" prefHeight="25.0" prefWidth="153.0" style="-fx-background-color: #707070;" stylesheets="@comboboxstyle.css" />
+      <Label layoutX="516.0" layoutY="54.0" text="COMPARISON" textFill="#53277e">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="772.0" layoutY="54.0" text="PERIODS" textFill="#53277e">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="periods" layoutX="834.0" layoutY="49.0" prefHeight="26.0" prefWidth="93.0" style="-fx-background-color: #707070;" />
+      <Button fx:id="conf" layoutX="947.0" layoutY="49.0" mnemonicParsing="false" onAction="#calc" style="-fx-background-color: #53277e;" text="CONF" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="level" layoutX="440.0" layoutY="9.0" prefHeight="25.0" prefWidth="62.0" style="-fx-background-color: #707070;" stylesheets="@comboboxstyle.css" />
+      <Label layoutX="398.0" layoutY="13.0" text="LEVEL" textFill="#53277e">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

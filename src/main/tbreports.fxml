@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="347.0" prefWidth="591.0" style="-fx-background-color: #1A1818;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.tbreports">
+   <children>
+       <DatePicker fx:id="dt1" layoutX="104.0" layoutY="246.0" prefHeight="35.0" prefWidth="300.0" />
+       <DatePicker fx:id="dt2" layoutX="104.0" layoutY="294.0" prefHeight="35.0" prefWidth="300.0" />
+       <ComboBox fx:id="type" layoutX="68.0" layoutY="18.0" prefHeight="35.0" prefWidth="300.0" style="-fx-background-color: #707070;" stylesheets="@comboboxstyle.css" />
+       <Label layoutX="16.0" layoutY="250.0" text="FROM" textFill="#53277e">
+           <font>
+               <Font name="System Bold" size="18.0" />
+           </font>
+       </Label> <ComboBox fx:id="comparison" layoutX="147.0" layoutY="76.0" prefHeight="35.0" prefWidth="300.0" style="-fx-background-color: #707070;" stylesheets="@comboboxstyle.css" />
+       <Label layoutX="14.0" layoutY="80.0" text="COMPARISON" textFill="#53277e">
+           <font>
+               <Font name="System Bold" size="18.0" />
+           </font>
+       </Label>
+       <Label layoutX="14.0" layoutY="22.0" text="TYPE" textFill="#53277e">
+           <font>
+               <Font name="System Bold" size="18.0" />
+           </font>
+       </Label>
+       <Label layoutX="16.0" layoutY="193.0" text="PERIODS" textFill="#53277e">
+           <font>
+               <Font name="System Bold" size="18.0" />
+           </font>
+       </Label>
+       <TextField fx:id="periods" layoutX="103.0" layoutY="190.0" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #707070;" />
+       <Button fx:id="conf" layoutX="484.0" layoutY="298.0" mnemonicParsing="false" onAction="#createrep" prefHeight="35.0" prefWidth="96.0" style="-fx-background-color: #53277e;" text="CREATE" textFill="WHITE">
+           <font>
+               <Font name="System Bold" size="12.0" />
+           </font>
+       </Button>
+      <Label layoutX="16.0" layoutY="298.0" text="TO" textFill="#53277e">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="level" layoutX="102.0" layoutY="137.0" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #707070;" stylesheets="@comboboxstyle.css" />
+      <Label layoutX="14.0" layoutY="141.0" text="LEVEL" textFill="#53277e">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600" prefWidth="1038.0" style="-fx-background-color: #1A1818; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.transview">
+    <children>
+        <Label fx:id="a" layoutX="53.0" layoutY="21.0" prefHeight="35.0" prefWidth="433.0" textFill="WHITE">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <TableView fx:id="dashboard" centerShape="true" editable="true" fixedCellSize="0.0" focusTraversable="false" layoutX="5.0" layoutY="73.0" prefHeight="515.0" prefWidth="1028.0" scaleShape="false" style="-fx-background-color: transparent;" stylesheets="@tablestyle.css">
+            <columns>
+                <TableColumn fx:id="n" editable="false" prefWidth="50.0" sortable="false" text="NUM" />
+                <TableColumn fx:id="an" editable="false" prefWidth="150.0" sortable="false" text="ACCOUNT" />
+                <TableColumn fx:id="pa" editable="false" prefWidth="140.0" sortable="false" text="PARENT ACCOUNT" />
+                <TableColumn fx:id="cc" editable="false" prefWidth="140.0" sortable="false" text="COSTCENTER" />
+                <TableColumn fx:id="db" editable="false" prefWidth="120.0" sortable="false" text="DEBIT" />
+                <TableColumn fx:id="cr" editable="false" prefWidth="120.0" sortable="false" text="CREDIT" />
+                <TableColumn fx:id="dt" editable="false" prefWidth="87.0" sortable="false" text="DATE" />
+                <TableColumn fx:id="us" editable="false" prefWidth="121.0" sortable="false" text="USER" />
+                <TableColumn fx:id="sb" editable="false" prefWidth="99.0" sortable="false" />
+            </columns>
+            <effect>
+                <Blend />
+            </effect>
+        </TableView>
+        <Button contentDisplay="CENTER" layoutX="10.0" layoutY="23.0" prefHeight="34.0" prefWidth="28.0" style="-fx-background-color: transparent; -fx-background-radius: 5;">
+            <graphic>
+                <ImageView fitHeight="24.0" fitWidth="26.0">
+                    <image>
+                        <Image url="@../assetes/return.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+    </children>
+</AnchorPane>

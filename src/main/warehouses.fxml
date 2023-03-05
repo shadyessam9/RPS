@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #1A1818; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.warehouses">
+    <children>
+        <Pane prefHeight="47.0" prefWidth="1007.0" style="-fx-background-color: #53277E; -fx-background-radius: 10 10 0 0;">
+            <children>
+                <Label layoutX="55.0" layoutY="7.0" text="WAREHOUSES" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="23.0" />
+                    </font>
+                </Label>
+                <Button contentDisplay="CENTER" layoutX="7.0" layoutY="6.0" onAction="#home" prefHeight="34.0" prefWidth="28.0" style="-fx-background-color: transparent; -fx-background-radius: 5;">
+                    <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="26.0">
+                            <image>
+                                <Image url="@../assetes/home.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+        </Pane>
+        <ComboBox fx:id="whs" layoutX="94.0" layoutY="60.0" prefHeight="25.0" prefWidth="250.0" style="-fx-background-color: #707070;" stylesheets="@comboboxstyle.css" />
+        <Label layoutX="11.0" layoutY="64.0" text="WAREHOUSE" textFill="#53277e">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+      <TableView fx:id="dashboard2" layoutX="520.0" layoutY="102.0" prefHeight="163.0" prefWidth="477.0" style="-fx-background-color: transparent;" stylesheets="@tablestyle.css">
+        <columns>
+          <TableColumn fx:id="it1" prefWidth="75.0" text="ITEM" />
+          <TableColumn fx:id="u1" prefWidth="104.0" text="UNIT" />
+            <TableColumn fx:id="quan1" prefWidth="134.0" text="QUANTITY" />
+            <TableColumn fx:id="price1" prefWidth="75.0" text="PRICE" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TableView fx:id="dashboard1" layoutX="11.0" layoutY="323.0" prefHeight="266.0" prefWidth="986.0" style="-fx-background-color: transparent;" stylesheets="@tablestyle.css">
+         <columns>
+            <TableColumn fx:id="src" prefWidth="75.0" text="SOURCE" />
+            <TableColumn fx:id="pn" prefWidth="75.0" text="PROJECT" />
+            <TableColumn fx:id="whn" prefWidth="75.0" text="WAREHOUSE" />
+            <TableColumn fx:id="it2" prefWidth="75.0" text="ITEM" />
+            <TableColumn fx:id="price2" prefWidth="75.0" text="PRICE/UNIT" />
+            <TableColumn fx:id="quan2" prefWidth="75.0" text="QUANTITY" />
+            <TableColumn fx:id="t" prefWidth="75.0" text="TOTAL" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Pane layoutX="12.0" layoutY="103.0" prefHeight="75.0" prefWidth="157.0" style="-fx-background-color: #707070; -fx-background-radius: 5;">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="8.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assetes/whp.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="65.0" layoutY="10.0" text="WAREHOUSES" textFill="#53277e">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="whnum" alignment="CENTER" contentDisplay="CENTER" layoutX="66.0" layoutY="38.0" prefHeight="20.0" prefWidth="82.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane layoutX="12.0" layoutY="190.0" prefHeight="75.0" prefWidth="157.0" style="-fx-background-color: #707070; -fx-background-radius: 5;">
+         <children>
+            <Label layoutX="100.0" layoutY="10.0" text="IN" textFill="#53277e">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="in" alignment="CENTER" contentDisplay="CENTER" layoutX="66.0" layoutY="35.0" prefHeight="20.0" prefWidth="82.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assetes/Icon%20awesome-arrow-circle-up.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane layoutX="179.0" layoutY="103.0" prefHeight="75.0" prefWidth="157.0" style="-fx-background-color: #707070; -fx-background-radius: 5;">
+         <children>
+            <Label layoutX="91.0" layoutY="10.0" text="ITEMS" textFill="#53277e">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="itnum" alignment="CENTER" contentDisplay="CENTER" layoutX="67.0" layoutY="36.0" prefHeight="20.0" prefWidth="82.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assetes/item.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane layoutX="179.0" layoutY="190.0" prefHeight="75.0" prefWidth="157.0" style="-fx-background-color: #707070; -fx-background-radius: 5;">
+         <children>
+            <Label layoutX="96.0" layoutY="10.0" text="OUT" textFill="#53277e">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="out" alignment="CENTER" contentDisplay="CENTER" layoutX="67.0" layoutY="35.0" prefHeight="20.0" prefWidth="82.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assetes/Icon%20awesome-arrow-circle-down.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane layoutX="346.0" layoutY="103.0" prefHeight="75.0" prefWidth="157.0" style="-fx-background-color: #707070; -fx-background-radius: 5;">
+         <children>
+            <Label layoutX="65.0" layoutY="10.0" text="NET HOLDING" textFill="#53277e">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="nh" alignment="CENTER" contentDisplay="CENTER" layoutX="65.0" layoutY="35.0" prefHeight="20.0" prefWidth="82.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assetes/Icon%20awesome-hand-holding-usd.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <ComboBox fx:id="type" layoutX="54.0" layoutY="288.0" prefHeight="25.0" prefWidth="157.0" style="-fx-background-color: #707070;" stylesheets="@comboboxstyle.css" />
+      <Label layoutX="13.0" layoutY="292.0" text="TYPE" textFill="#53277e">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

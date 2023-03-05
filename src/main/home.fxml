@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="home" prefHeight="420.0" prefWidth="700.0" style="-fx-background-color: #1A1818; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.home">
+   <children>
+      <Label fx:id="name" layoutX="90.0" layoutY="36.0" prefHeight="18.0" prefWidth="88.0" text="name" textFill="WHITE" />
+      <ImageView fx:id="accpic" fitHeight="26.0" fitWidth="27.0" layoutX="43.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assetes/hr.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="18.0" fitWidth="12.0" layoutX="649.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assetes/bell.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="18.0" fitWidth="12.0" layoutX="600.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assetes/chat.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="670.0" layoutY="11.0" onMousePressed="#exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assetes/exit.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#53277e" height="82.0" layoutX="39.0" layoutY="101.0" stroke="#24242400" strokeType="INSIDE" style="-fx-arc-width: 20; -fx-arc-height: 20;" width="148.0" />
+      <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="142.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assetes/r.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="45.0" layoutY="106.0" text="Revenu" textFill="WHITE" />
+      <Label fx:id="rev" layoutX="45.0" layoutY="127.0" textFill="WHITE" />
+      <Label fx:id="revperc" layoutX="48.0" layoutY="164.0" prefHeight="15.0" prefWidth="34.0" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="165.0" text="Since last month" textFill="WHITE">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#53277e" height="82.0" layoutX="198.0" layoutY="101.0" stroke="#24242400" strokeType="INSIDE" style="-fx-arc-width: 20; -fx-arc-height: 20;" width="148.0" />
+      <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="301.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assetes/e.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="204.0" layoutY="106.0" text="Expanses" textFill="WHITE" />
+      <Label fx:id="exp" layoutX="204.0" layoutY="127.0" textFill="WHITE" />
+      <Label fx:id="expperc" layoutX="207.0" layoutY="164.0" prefHeight="15.0" prefWidth="34.0" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="246.0" layoutY="165.0" text="Since last month" textFill="WHITE">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#53277e" height="82.0" layoutX="357.0" layoutY="101.0" stroke="#24242400" strokeType="INSIDE" style="-fx-arc-width: 20; -fx-arc-height: 20;" width="148.0" />
+      <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="460.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assetes/s.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="363.0" layoutY="106.0" text="Sales" textFill="WHITE" />
+      <Label fx:id="sal" layoutX="363.0" layoutY="127.0" textFill="WHITE" />
+      <Label fx:id="salperc" layoutX="366.0" layoutY="164.0" prefHeight="15.0" prefWidth="34.0" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="405.0" layoutY="165.0" text="Since last month" textFill="WHITE">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#53277e" height="82.0" layoutX="516.0" layoutY="101.0" stroke="#24242400" strokeType="INSIDE" style="-fx-arc-width: 20; -fx-arc-height: 20;" width="148.0" />
+      <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="619.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assetes/p.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="522.0" layoutY="106.0" text="Performance" textFill="WHITE" />
+      <Label fx:id="per" layoutX="522.0" layoutY="127.0" textFill="WHITE" />
+      <Label fx:id="perperc" layoutX="525.0" layoutY="164.0" prefHeight="15.0" prefWidth="34.0" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="564.0" layoutY="165.0" text="Since last month" textFill="WHITE">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="301.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assetes/vlogo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="notn" layoutX="633.0" layoutY="47.0" prefHeight="17.0" prefWidth="15.0" textFill="WHITE" />
+      <Label fx:id="msgn" layoutX="583.0" layoutY="47.0" prefHeight="17.0" prefWidth="15.0" textFill="WHITE" />
+      <Label fx:id="name1" layoutX="91.0" layoutY="57.0" prefHeight="18.0" prefWidth="88.0" text="name" textFill="WHITE" />
+      <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="6.0" layoutX="516.0" layoutY="209.0" onAction="#projects" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #7764E4; -fx-background-radius: 5;" textAlignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="38.0">
+               <Image url="@../assetes/pro.png" />
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="6.0" layoutX="253.0" layoutY="209.0" onAction="#create" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #2DCE98; -fx-background-radius: 5;" textAlignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="38.0">
+               <image>
+                  <Image url="@../assetes/cre.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="6.0" layoutX="390.0" layoutY="209.0" onAction="#reporting" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #F53C56; -fx-background-radius: 5;" textAlignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="38.0">
+               <image>
+                  <Image url="@../assetes/rep.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="6.0" layoutX="128.0" layoutY="210.0" onAction="#accounting" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #11CDEF; -fx-background-radius: 5;" textAlignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="38.0">
+               <image>
+                  <Image url="@../assetes/acc.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button contentDisplay="CENTER" layoutX="516.0" layoutY="309.0" onAction="#settings" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #707070; -fx-background-radius: 5;">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0">
+               <image>
+                  <Image url="@../assetes/set.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button contentDisplay="CENTER" layoutX="253.0" layoutY="310.0" onAction="#hr" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #FB6340; -fx-background-radius: 5;">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="38.0">
+               <image>
+                  <Image url="@../assetes/hr.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button contentDisplay="CENTER" layoutX="390.0" layoutY="309.0" onAction="#planning" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #BB50D5; -fx-background-radius: 5;">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="38.0">
+               <image>
+                  <Image url="@../assetes/plan.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button contentDisplay="CENTER" layoutX="128.0" layoutY="310.0" onAction="#warehouses" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #FEB969; -fx-background-radius: 5;">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0">
+               <image>
+                  <Image url="@../assetes/wh.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="122.0" layoutY="277.0" text="ACCOUNTING" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="263.0" layoutY="276.0" text="CREATE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="389.0" layoutY="276.0" text="REPORTING" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="520.0" layoutY="276.0" text="PROJECTS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="376.0" text="WAREHOUSES" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="228.0" layoutY="376.0" text="EMPLOYEE CONTROL" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="391.0" layoutY="375.0" text="PLANNING" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="521.0" layoutY="375.0" text="SETTINGS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

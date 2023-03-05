@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="apane" prefHeight="496.0" prefWidth="670.0" style="-fx-background-color: #1A1818; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.addbill">
+    <children>
+        <Label layoutX="358.0" layoutY="11.0" text="ايصال صرف نقديه / " textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="23.0" />
+            </font>
+        </Label>
+        <Button contentDisplay="CENTER" layoutX="2.0" layoutY="10.0" onAction="#create" prefHeight="34.0" prefWidth="28.0" style="-fx-background-color: transparent; -fx-background-radius: 5;">
+            <graphic>
+                <ImageView fitHeight="24.0" fitWidth="26.0">
+                    <image>
+                        <Image url="@../assetes/return.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Label fx:id="billid" layoutX="46.0" layoutY="11.0" prefHeight="34.0" prefWidth="314.0" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="16.0" layoutY="71.0" text="DATE" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="216.0" layoutY="71.0" text="ACCUIRE DATE" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Button layoutX="563.0" layoutY="14.0" mnemonicParsing="false" onAction="#post" prefHeight="30.0" prefWidth="97.0" style="-fx-background-radius: 5; -fx-background-color: #53277E;" text="ADD" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Button>
+        <DatePicker fx:id="date1" layoutX="14.0" layoutY="94.0" prefHeight="35.0" prefWidth="175.0" style="-fx-background-color: #707070;" />
+        <ComboBox fx:id="project" layoutX="356.0" layoutY="180.0" prefHeight="35.0" prefWidth="300.0" style="-fx-background-color: #707070; -fx-background-radius: 5;" stylesheets="@comboboxstyle.css" />
+        <Label layoutX="358.0" layoutY="155.0" text="PROJECT" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+      <DatePicker fx:id="date2" layoutX="213.0" layoutY="94.0" prefHeight="35.0" prefWidth="175.0" style="-fx-background-color: #707070;" />
+      <ComboBox fx:id="vendoraccount" layoutX="14.0" layoutY="180.0" prefHeight="35.0" prefWidth="300.0" style="-fx-background-color: #707070; -fx-background-radius: 5;" stylesheets="@comboboxstyle.css" />
+      <Label layoutX="16.0" layoutY="155.0" text="VENDOR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addedvalue" layoutX="12.0" layoutY="262.0" prefHeight="35.0" prefWidth="200.0" style="-fx-background-radius: 5; -fx-background-color: #707070;" />
+      <Label layoutX="14.0" layoutY="239.0" text="ADDEDVALUE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nettotal" layoutX="238.0" layoutY="262.0" prefHeight="35.0" prefWidth="200.0" style="-fx-background-radius: 5; -fx-background-color: #707070;" />
+      <Label layoutX="239.0" layoutY="239.0" text="NET TOTAL" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="308.0" text="ITEMS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="billnumber" alignment="CENTER" contentDisplay="CENTER" layoutX="572.0" layoutY="309.0" prefHeight="34.0" prefWidth="84.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="349.0" text="ITEM" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="price" layoutX="224.0" layoutY="372.0" prefHeight="35.0" prefWidth="180.0" style="-fx-background-radius: 5; -fx-background-color: #707070;" />
+      <Label layoutX="226.0" layoutY="349.0" text="PRICE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="quantity" layoutX="425.0" layoutY="372.0" prefHeight="35.0" prefWidth="180.0" style="-fx-background-radius: 5; -fx-background-color: #707070;" />
+      <Label layoutX="427.0" layoutY="349.0" text="QUANTITY" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button contentDisplay="CENTER" layoutX="613.0" layoutY="362.0" onAction="#ai" prefHeight="54.0" prefWidth="52.0" style="-fx-background-color: transparent; -fx-background-radius: 5;">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="26.0">
+               <image>
+                  <Image url="@../assetes/add.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ComboBox fx:id="item" layoutX="19.0" layoutY="372.0" prefHeight="35.0" prefWidth="180.0" style="-fx-background-color: #707070; -fx-background-radius: 5;" stylesheets="@comboboxstyle.css" />
+      <Button layoutX="518.0" layoutY="313.0" mnemonicParsing="false" onAction="#last" prefHeight="26.0" prefWidth="28.0" style="-fx-background-radius: 5; -fx-background-color: #53277E;" text="&lt;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="purchaseaccount" layoutX="404.0" layoutY="96.0" prefHeight="35.0" prefWidth="251.0" style="-fx-background-color: #707070; -fx-background-radius: 5;" stylesheets="@comboboxstyle.css" />
+      <Label layoutX="406.0" layoutY="71.0" text="PURCHASE ACCOUNT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="419.0" text="WAREHOUSE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="wh" layoutX="19.0" layoutY="442.0" prefHeight="35.0" prefWidth="283.0" style="-fx-background-color: #707070; -fx-background-radius: 5;" stylesheets="@comboboxstyle.css" />
+    </children>
+</AnchorPane>

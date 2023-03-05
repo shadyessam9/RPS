@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="586.0" prefWidth="1045.0" style="-fx-background-radius: 10; -fx-background-color: #272727;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.extractviewe">
+    <children>
+        <Pane layoutX="42.0" layoutY="71.0" prefHeight="107.0" prefWidth="928.0" style="-fx-background-color: #4A4949; -fx-background-radius: 10;">
+            <children>
+                <Label layoutX="26.0" layoutY="23.0" text="EXTRACTTYPE : " textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="26.0" layoutY="63.0" text="CLIENT : " textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="323.0" layoutY="61.0" text="TOTAL : " textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="656.0" layoutY="23.0" text="AVRN : " textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="323.0" layoutY="23.0" text="PROJECT : " textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="et" layoutX="132.0" layoutY="23.0" prefHeight="20.0" prefWidth="140.0" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="avrn" layoutX="708.0" layoutY="23.0" prefHeight="20.0" prefWidth="148.0" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="pn" layoutX="394.0" layoutY="23.0" prefHeight="20.0" prefWidth="186.0" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="cn" layoutX="85.0" layoutY="63.0" prefHeight="20.0" prefWidth="186.0" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="ev" layoutX="379.0" layoutY="62.0" prefHeight="20.0" prefWidth="148.0" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="529.0" layoutY="62.0" text="EG" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+            </children></Pane>
+        <TableView fx:id="dashboard" layoutX="10.0" layoutY="192.0" prefHeight="394.0" prefWidth="1007.0" style="-fx-background-color: transparent;" stylesheets="@tablestyle.css">
+            <columns>
+                <TableColumn fx:id="ws" editable="false" prefWidth="180.0" resizable="false" sortable="false" text="WORKSTATEMENT" />
+                <TableColumn fx:id="unit" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="UNIT" />
+                <TableColumn fx:id="quan" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="QUANTITY" />
+                <TableColumn fx:id="cla" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="CLASS" />
+                <TableColumn fx:id="la" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="LAST" />
+                <TableColumn fx:id="cur" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="CURRENT" />
+                <TableColumn fx:id="tot" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="TOTAL" />
+                <TableColumn fx:id="wo" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="WORK" />
+                <TableColumn fx:id="cut" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="CUT" />
+                <TableColumn fx:id="nw" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="NET.WORK" />
+                <TableColumn fx:id="no" editable="false" prefWidth="150.0" resizable="false" sortable="false" text="NOTES" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+        <Label layoutX="59.0" layoutY="23.0" text="EXTRACTNUMBER / " textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="en" layoutX="296.0" layoutY="23.0" prefHeight="35.0" prefWidth="232.0" textFill="WHITE">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Button contentDisplay="CENTER" layoutX="10.0" layoutY="23.0" prefHeight="34.0" prefWidth="28.0" style="-fx-background-color: transparent; -fx-background-radius: 5;">
+            <graphic>
+                <ImageView fitHeight="24.0" fitWidth="26.0">
+                    <image>
+                        <Image url="@../assetes/return.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+    </children>
+</AnchorPane>

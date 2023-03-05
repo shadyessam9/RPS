@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="467.0" prefWidth="604.0" style="-fx-background-color: #1A1818; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.reports">
+    <children>
+        <Pane prefHeight="47.0" prefWidth="604.0" style="-fx-background-color: #53277E; -fx-background-radius: 10 10 0 0;">
+            <children>
+                <Label layoutX="55.0" layoutY="7.0" text="REPORTING" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="23.0" />
+                    </font>
+                </Label>
+                <Button contentDisplay="CENTER" layoutX="7.0" layoutY="6.0" onAction="#home" prefHeight="34.0" prefWidth="28.0" style="-fx-background-color: transparent; -fx-background-radius: 5;">
+                    <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="26.0">
+                            <image>
+                                <Image url="@../assetes/home.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+        </Pane>
+        <Pane fx:id="host" layoutX="5.0" layoutY="114.0" prefHeight="342.0" prefWidth="592.0" style="-fx-background-radius: 10; -fx-background-color: #1A1818;" />
+        <ComboBox fx:id="type" layoutX="133.0" layoutY="59.0" prefHeight="30.0" prefWidth="236.0" style="-fx-background-color: #707070;" stylesheets="@comboboxstyle.css" />
+        <Label layoutX="14.0" layoutY="58.0" prefHeight="27.0" prefWidth="113.0" text="REPORT TYPE" textFill="#53277e">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+      <Button layoutX="404.0" layoutY="59.0" mnemonicParsing="false" onAction="#createrep" text="Button" />
+      <Line endX="505.0" layoutX="98.0" layoutY="108.0" startX="-100.0" stroke="#53277e" />
+    </children>
+</AnchorPane>

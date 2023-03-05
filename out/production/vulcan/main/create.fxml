@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="334.0" prefWidth="589.0" style="-fx-background-color: #1A1818; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.create">
+    <children>
+        <Label fx:id="rev" layoutX="45.0" layoutY="127.0" textFill="WHITE" />
+        <Label fx:id="revperc" layoutX="48.0" layoutY="164.0" prefHeight="15.0" prefWidth="34.0" textFill="WHITE">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </Label>
+        <Label fx:id="exp" layoutX="204.0" layoutY="127.0" textFill="WHITE" />
+        <Label fx:id="expperc" layoutX="207.0" layoutY="164.0" prefHeight="15.0" prefWidth="34.0" textFill="WHITE">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </Label>
+        <Label fx:id="sal" layoutX="363.0" layoutY="127.0" textFill="WHITE" />
+        <Label fx:id="salperc" layoutX="366.0" layoutY="164.0" prefHeight="15.0" prefWidth="34.0" textFill="WHITE">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </Label>
+        <Label fx:id="per" layoutX="522.0" layoutY="127.0" textFill="WHITE" />
+        <Label fx:id="perperc" layoutX="525.0" layoutY="164.0" prefHeight="15.0" prefWidth="34.0" textFill="WHITE">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </Label>
+        <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="6.0" layoutX="339.0" layoutY="79.0" onAction="#bill" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #7764E4; -fx-background-radius: 5;" textAlignment="CENTER">
+            <graphic>
+                <ImageView fitHeight="40.0" fitWidth="38.0">
+                    <Image url="@../assetes/cre.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button contentDisplay="CENTER" layoutX="17.0" layoutY="16.0" onAction="#home" prefHeight="34.0" prefWidth="28.0" style="-fx-background-color: transparent; -fx-background-radius: 5;">
+            <graphic>
+                <ImageView fitHeight="24.0" fitWidth="26.0">
+                    <image>
+                        <Image url="@../assetes/home.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="6.0" layoutX="84.0" layoutY="79.0" onAction="#extract" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #2DCE98; -fx-background-radius: 5;" textAlignment="CENTER">
+            <graphic>
+                <ImageView fitHeight="40.0" fitWidth="38.0">
+                    <image>
+                        <Image url="@../assetes/cre.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="6.0" layoutX="213.0" layoutY="79.0" onAction="#project" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #F53C56; -fx-background-radius: 5;" textAlignment="CENTER">
+            <graphic>
+                <ImageView fitHeight="40.0" fitWidth="38.0">
+                    <image>
+                        <Image url="@../assetes/cre.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="6.0" layoutX="83.0" layoutY="181.0" onAction="#account" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #11CDEF; -fx-background-radius: 5;" textAlignment="CENTER">
+            <graphic>
+                <ImageView fitHeight="45.0" fitWidth="38.0">
+                    <image>
+                        <Image url="@../assetes/rep.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button contentDisplay="CENTER" layoutX="449.0" layoutY="79.0" onAction="#entry" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #FB6340; -fx-background-radius: 5;">
+            <graphic>
+                <ImageView fitHeight="40.0" fitWidth="45.0">
+                    <image>
+                        <Image url="@../assetes/rep.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button contentDisplay="CENTER" layoutX="213.0" layoutY="181.0" onAction="#entity" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #BB50D5; -fx-background-radius: 5;">
+            <graphic>
+                <ImageView fitHeight="40.0" fitWidth="41.0" smooth="false">
+                    <image>
+                        <Image url="@../assetes/hr.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Label layoutX="65.0" layoutY="247.0" text="ACCOUNTS ENTRY" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="11.0" />
+            </font>
+        </Label>
+        <Label layoutX="68.0" layoutY="146.0" text="CREATE EXTRACT" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="11.0" />
+            </font>
+        </Label>
+        <Label layoutX="198.0" layoutY="146.0" text="CREATE PROJECT" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="11.0" />
+            </font>
+        </Label>
+        <Label layoutX="337.0" layoutY="146.0" text="CREATE BILL" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="11.0" />
+            </font>
+        </Label>
+        <Label layoutX="435.0" layoutY="146.0" text="JOURNAL ENTRY" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="11.0" />
+            </font>
+        </Label>
+        <Label layoutX="202.0" layoutY="247.0" text="CREATE ENTITY" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="11.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

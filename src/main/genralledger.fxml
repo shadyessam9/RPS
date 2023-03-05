@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="553.0" prefWidth="1007.0" style="-fx-background-color: #1A1818; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.genralledger">
+    <children>
+        <ComboBox fx:id="level" layoutX="316.0" layoutY="14.0" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: #707070;" stylesheets="@comboboxstyle.css" />
+        <Label layoutX="446.0" layoutY="17.0" text="DATE" textFill="#53277e">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="21.0" layoutY="11.0" text="GENERAL LEDGER" textFill="#53277e">
+            <font>
+                <Font name="System Bold" size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="277.0" layoutY="17.0" text="LEVEL" textFill="#53277e">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <TableView fx:id="dashboard" centerShape="true" editable="true" fixedCellSize="0.0" focusTraversable="false" layoutX="1.0" layoutY="51.0" prefHeight="496.0" prefWidth="1003.0" scaleShape="false" style="-fx-background-color: transparent;" stylesheets="@tablestyle.css">
+            <columns>
+                <TableColumn fx:id="an" prefWidth="170.0" sortable="false" text="ACCOUNT" />
+                <TableColumn fx:id="ob" prefWidth="170.0" sortable="false" text="OPENNING BALANCE">
+               <columns>
+                  <TableColumn fx:id="odb" prefWidth="85.0" />
+                  <TableColumn fx:id="ocr" prefWidth="85.0" />
+               </columns></TableColumn>
+                <TableColumn fx:id="db" prefWidth="220.0" sortable="false" />
+                <TableColumn fx:id="cr" prefWidth="150.0" sortable="false" />
+            <TableColumn fx:id="bal" prefWidth="150.0" sortable="false" />
+            <TableColumn fx:id="vt" prefWidth="140.0" sortable="false" />
+            </columns>
+            <effect>
+                <Blend />
+            </effect>
+        </TableView>
+        <DatePicker fx:id="dt1" layoutX="662.0" layoutY="13.0" prefHeight="25.0" prefWidth="128.0" />
+        <DatePicker fx:id="dt2" layoutX="800.0" layoutY="13.0" prefHeight="0.0" prefWidth="128.0" />
+      <ComboBox fx:id="date" layoutX="485.0" layoutY="13.0" prefHeight="25.0" prefWidth="163.0" style="-fx-background-color: #707070;" stylesheets="@comboboxstyle.css" />
+      <Button fx:id="conf" layoutX="941.0" layoutY="13.0" mnemonicParsing="false" onAction="#run" style="-fx-background-color: #53277e;" text="CONF" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

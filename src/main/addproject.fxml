@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="apane" prefHeight="402.0" prefWidth="627.0" style="-fx-background-color: #1A1818; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.addproject">
+    <children>
+        <Label layoutX="52.0" layoutY="10.0" text="PROJECT/" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="23.0" />
+            </font>
+        </Label>
+        <Button contentDisplay="CENTER" layoutX="2.0" layoutY="10.0" onAction="#create" prefHeight="34.0" prefWidth="28.0" style="-fx-background-color: transparent; -fx-background-radius: 5;">
+            <graphic>
+                <ImageView fitHeight="24.0" fitWidth="26.0">
+                    <image>
+                        <Image url="@../assetes/return.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Label fx:id="pid" layoutX="163.0" layoutY="10.0" prefHeight="34.0" prefWidth="322.0" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="23.0" />
+            </font>
+        </Label>
+        <TextField fx:id="pn" layoutX="33.0" layoutY="88.0" prefHeight="35.0" prefWidth="250.0" style="-fx-background-radius: 5; -fx-background-color: #707070;" />
+        <ComboBox fx:id="sn" layoutX="33.0" layoutY="172.0" prefHeight="35.0" prefWidth="207.0" style="-fx-background-color: #707070; -fx-background-radius: 5;" stylesheets="@comboboxstyle.css" />
+        <Label layoutX="35.0" layoutY="149.0" text="SITE" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Button contentDisplay="CENTER" layoutX="247.0" layoutY="163.0" onAction="#send" prefHeight="54.0" prefWidth="52.0" style="-fx-background-color: transparent; -fx-background-radius: 5;">
+            <graphic>
+                <ImageView fitHeight="24.0" fitWidth="26.0">
+                    <image>
+                        <Image url="@../assetes/add.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button layoutX="500.0" layoutY="12.0" mnemonicParsing="false" onAction="#ap" prefHeight="30.0" prefWidth="97.0" style="-fx-background-radius: 5; -fx-background-color: #53277E;" text="ADD" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Button>
+        <Label layoutX="35.0" layoutY="65.0" text="PROJECT NAME " textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+      <ComboBox fx:id="cn" layoutX="345.0" layoutY="88.0" prefHeight="35.0" prefWidth="250.0" style="-fx-background-color: #707070; -fx-background-radius: 5;" stylesheets="@comboboxstyle.css" />
+      <Label layoutX="347.0" layoutY="65.0" text="CLIENT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cp" layoutX="345.0" layoutY="172.0" prefHeight="35.0" prefWidth="250.0" style="-fx-background-radius: 5; -fx-background-color: #707070;" />
+      <Label layoutX="347.0" layoutY="149.0" text="CONTRACT PRICE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="238.0" text="INSURANCE ACCOUNT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="ia" layoutX="33.0" layoutY="262.0" prefHeight="35.0" prefWidth="250.0" style="-fx-background-color: #707070; -fx-background-radius: 5;" stylesheets="@comboboxstyle.css" />
+      <Label layoutX="347.0" layoutY="238.0" text="حساب عهد" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sa" layoutX="347.0" layoutY="262.0" prefHeight="35.0" prefWidth="250.0" style="-fx-background-radius: 5; -fx-background-color: #707070;" />
+      <Label layoutX="33.0" layoutY="315.0" text="حساب ايرادات" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="i" layoutX="33.0" layoutY="339.0" prefHeight="35.0" prefWidth="250.0" style="-fx-background-radius: 5; -fx-background-color: #707070;" />
+    </children>
+</AnchorPane>

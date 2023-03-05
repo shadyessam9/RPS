@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="apane" prefHeight="227.0" prefWidth="357.0" style="-fx-background-color: #1A1818; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.splashscreen">
+    <children>
+      <Label layoutX="281.0" layoutY="75.0" prefHeight="23.0" prefWidth="22.0" text="©" textFill="#53277e">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="102.0" text="REWRITE THE STARS" textFill="#53277e">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ProgressIndicator fx:id="progress" layoutX="153.0" layoutY="133.0" prefHeight="40.0" prefWidth="40.0" style="-fx-progress-color: #53277e;" />
+      <Label layoutX="75.0" layoutY="38.0" text="STARTEK" textFill="#53277e">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="l" layoutX="140.0" layoutY="180.0" prefHeight="18.0" prefWidth="69.0" text="Connecting..." textFill="#53277e" />
+    </children>
+</AnchorPane>
